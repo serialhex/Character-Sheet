@@ -13,3 +13,8 @@ Makes (pathfinder) character sheet, with rules & everything.
   * Berkeley DB - <http://en.wikipedia.org/wiki/Berkeley_DB>
   * GDBM - <http://www.gnu.org.ua/software/gdbm/>
   * SQLite - <http://www.sqlite.org/>
+
+---
+
+# Docs
+<https://docs.google.com/document/d/1rk2Ez5c1YDAQ896XvyVdpORHmtOK6svSzGrmbHrYPRI/edit?usp=sharing>
