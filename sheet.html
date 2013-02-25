@@ -1,9 +1,75 @@
-
+<!DOCTYPE html>
 <html>
   <head>
-    <script type="text/javascript" src="rules.js"/>
+      <script type="text/javascript" src="rules.js"></script>
   </head>
   <body>
-    Stuff goes here
+    <!-- 3 Views:
+    3x5 Card small block:
+        Name (align), Atk Bonuses (also CMD/CMB), Defenses (AC, Fort, Ref, Will, etc),
+        HP (Current/Full), Initative, Speed(s), 
+        Other special Attacks (spells, breathweapon, etc...)
+        Color Numbers that have an active effect (green for pos overall effects, red for neg overall effects).
+    Overview Sheet:
+        All of the above, plus:  (just totals)
+        Expierence points, Misc Equipment, All spells (brief descriptions & per day),
+        Skills & languages I have, Misc Items, Feats, Traits, Spec abilites,
+        MAKIN LOTZA MONNIE!!!!
+        Active Effects & what they effect.
+    Full sheet:
+        EVERYTHING ELSE PLUS!!!!!
+        How everything is derived,
+        *ALL* Skills @ current score
+        Trained Skills that don't have any ranks get a `-` and nothing is calculated!
+    -->
+    
+    <div id='wrapper'>
+        <div id='CharSummary'>
+            <div id="CharBasics">
+                <h1>
+                    <span id="CharName"></span>
+                    (<span id="CharAlign">CE</span>)
+                    <span id="CharLevel">9001</span>
+                </h1>
+            </div> <!-- CharBasics -->
+            
+            <div id="CharCore">
+                <span id="CharHP">0<br /></span>
+                <span id="CharInit">0<br /></span>
+                <span id="CharSpeed">42<br /></span>
+                <span id="CharClimb"><br /></span>
+                <span id="CharFly"><br /></span>
+                <span id="CharBurrow"><br /></span>
+                <span id="CharSwim"><br /></span>
+            </div> <!-- CharCore -->
+
+            <br />
+
+            <div id="CharOffense">
+                <!--First 3 Melee / Ranged Weapons or Attacks (i.e. Claw & Bite)-->
+                <div id="CharAttacks">
+                    <span id="CharAtk1">Sword of DHOOM!!!!  +9001 deathyness<br /></span>
+                    <span id="CharAtk2"><br /></span>
+                    <span id="CharAtk3"><br /></span>
+                </div> <!-- CharAttacks -->
+                <div id="CharSpecAtks">
+                    <!-- Insert stuff here -->
+                </div> <!-- CharSpecAtks -->
+                <span id="CharCMD">5<br /></span>
+                <span id="CharCMB">6<br /></span>
+            </div> <!-- CharOffense -->
+            
+            <br />
+            
+            <div id="CharDefense">
+                <span id="CharAC">10<br /></span>
+                <span id="CharTouch">11<br /></span>
+                <span id="CharFF">12<br /></span>
+                <span id="CharFort">5<br /></span>
+                <span id="CharRef">6<br /></span>
+                <span id="CharWill">7<br /></span>
+            </div> <!-- CharDefense -->
+        </div> <!-- CharSummary -->
+    </div> <!-- wrapper -->
   </body>
 </html>
